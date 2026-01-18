@@ -1,0 +1,49 @@
+<header class="bg-sky-600 p-3 text-white">
+    <nav class="flex justify-between items-center">
+        <h1 class="text-3xl font-bold ">My   <span class="dark:text-slate-200 skl" data-text="Gallery">
+              Gallery
+            </span></h1>
+
+            <a href="https://rendyportofolio.netlify.app/" class="mt-2" >
+                <img src="/public/my-portofolio.svg" alt="" class="w-10 ">
+            </a>
+    </nav>
+</header>
+
+<style>
+
+	.skl {
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.skl::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 0;
+  height: 100%;
+
+  color: #e2cf1e;
+  border-right: 2px solid #e2cf1e;
+
+  overflow: hidden;
+  white-space: nowrap;
+
+  animation: animate 5s linear infinite;
+  z-index: 2;
+}
+
+@keyframes animate {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  70%, 90% {
+    width: 100%;
+  }
+}
+
+</style>
