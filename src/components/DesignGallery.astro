@@ -36,7 +36,13 @@ const galleryItems = [
   <div class="gallery-grid">
     {galleryItems.map(item => (
       <figure class="gallery-item">
-        <img src={item.image.src} alt={item.title} loading="lazy" />
+        <img
+          src={item.image.src}
+          alt={item.title}
+          loading="lazy"
+          class="designwork-image"
+          onload="this.classList.add('loaded')"
+        />
         <figcaption class="overlay">
           <h3>{item.title}</h3>
           <span class="category-tag">{item.category}</span>
@@ -54,14 +60,42 @@ const galleryItems = [
   box-sizing: border-box;
 }
 
-/* CONTAINER */
+/* =========================
+   IMAGE BLUR LOAD (FIXED)
+========================= */
+.designwork-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+
+  /* DEFAULT = BLUR */
+  filter: blur(18px);
+  transform: scale(1.08);
+
+  transition:
+    filter .6s ease,
+    transform .6s ease;
+}
+
+/* AFTER LOAD */
+.designwork-image.loaded {
+  filter: blur(0);
+  transform: scale(1);
+}
+
+/* =========================
+   CONTAINER
+========================= */
 .gallery-container {
   padding: 3rem 2rem;
   min-height: 100vh;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* ✅ MASONRY GRID (AUTO HEIGHT) */
+/* =========================
+   MASONRY GRID
+========================= */
 .gallery-grid {
   column-count: 4;
   column-gap: 1.25rem;
@@ -69,7 +103,9 @@ const galleryItems = [
   margin: 0 auto;
 }
 
-/* ITEM */
+/* =========================
+   ITEM
+========================= */
 .gallery-item {
   position: relative;
   margin-bottom: 1.25rem;
@@ -79,13 +115,7 @@ const galleryItems = [
   background: #111;
   box-shadow: 0 8px 24px rgba(0,0,0,.12);
   transition: transform .25s ease, box-shadow .25s ease;
-}
-
-/* IMAGE = UKURAN ASLI */
-.gallery-item img {
-  width: 100%;
-  height: auto;
-  display: block;
+  contain: layout paint;
 }
 
 /* HOVER */
@@ -94,7 +124,9 @@ const galleryItems = [
   box-shadow: 0 18px 36px rgba(0,0,0,.18);
 }
 
-/* OVERLAY */
+/* =========================
+   OVERLAY
+========================= */
 .overlay {
   position: absolute;
   inset: 0;
@@ -104,8 +136,8 @@ const galleryItems = [
   justify-content: flex-end;
   background: linear-gradient(
     to top,
-    rgba(0,0,0,.7),
-    rgba(0,0,0,.15),
+    rgba(0,0,0,.75),
+    rgba(0,0,0,.25),
     transparent
   );
   opacity: 0;
@@ -135,7 +167,9 @@ const galleryItems = [
   width: fit-content;
 }
 
-/* 📱 RESPONSIVE */
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 1200px) {
   .gallery-grid {
     column-count: 3;
