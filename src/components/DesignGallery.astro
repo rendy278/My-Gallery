@@ -1,195 +1,547 @@
 ---
-import Chaeyoung from '../assets/desain/chaeyoung.webp';
-import Tzuyu from '../assets/desain/tzuyu.webp';
-import Tzuyu2 from '../assets/desain/tzuyu2.webp';
-import TzuyuArt from '../assets/desain/tzuyuart.webp';
-import HwangYeji from '../assets/desain/hwang-yeji.webp';
-import TMC1 from '../assets/desain/tmc1.webp';
-import TMC2 from '../assets/desain/tmc2.webp';
-import TMC3 from '../assets/desain/tmc3.webp';
-import TMC4 from '../assets/desain/tmc4.webp';
-import TMC5 from '../assets/desain/tmc5.webp';
-import TMC6 from '../assets/desain/tmc6.webp';
-import TMC7 from '../assets/desain/tmc7.webp';
-import TMC8 from '../assets/desain/tmc8.webp';
-import TMC9 from '../assets/desain/tmc9.webp';
+import Chaeyoung from "../assets/desain/chaeyoung.webp";
+import Tzuyu from "../assets/desain/tzuyu.webp";
+import Tzuyu2 from "../assets/desain/tzuyu2.webp";
+import TzuyuArt from "../assets/desain/tzuyuart.webp";
+import HwangYeji from "../assets/desain/hwang-yeji.webp";
+import FruitJuice from "../assets/desain/fruitjuice.webp";
+import FruitJuiceHind from "../assets/desain/fruitjuicehind.webp";
+
+import TMC1 from "../assets/desain/tmc1.webp";
+import TMC2 from "../assets/desain/tmc2.webp";
+import TMC3 from "../assets/desain/tmc3.webp";
+import TMC4 from "../assets/desain/tmc4.webp";
+import TMC5 from "../assets/desain/tmc5.webp";
+import TMC6 from "../assets/desain/tmc6.webp";
+import TMC7 from "../assets/desain/tmc7.webp";
+import TMC8 from "../assets/desain/tmc8.webp";
+import TMC9 from "../assets/desain/tmc9.webp";
+
+
+import TzuyuWallper from "../assets/desain/tzuyu wallpaper.webp"
+import golancustomer from "../assets/ilustration/golancustomer.webp";
+import mushola from "../assets/ilustration/mushola.webp";
 
 const galleryItems = [
-  { id: 1, title: 'Chaeyoung', category: 'Art', image: Chaeyoung },
-  { id: 2, title: 'Tzuyu', category: 'Art', image: Tzuyu },
-  { id: 3, title: 'Tzuyu Concept', category: 'Art', image: Tzuyu2 },
-  { id: 4, title: 'Tzuyu Artwork', category: 'Art', image: TzuyuArt },
-  { id: 5, title: 'Hwang Yeji', category: 'Art', image: HwangYeji },
-  { id: 6, title: 'TMC #1', category: 'Design', image: TMC1 },
-  { id: 7, title: 'TMC #2', category: 'Design', image: TMC2 },
-  { id: 8, title: 'TMC #3', category: 'Design', image: TMC3 },
-  { id: 9, title: 'TMC #4', category: 'Design', image: TMC4 },
-  { id: 10, title: 'TMC #5', category: 'Design', image: TMC5 },
-  { id: 11, title: 'TMC #6', category: 'Design', image: TMC6 },
-  { id: 12, title: 'TMC #7', category: 'Design', image: TMC7 },
-  { id: 13, title: 'TMC #8', category: 'Design', image: TMC8 },
-  { id: 14, title: 'TMC #9', category: 'Design', image: TMC9 },
+  {
+    id: 1,
+    title: "Chaeyoung",
+    category: "Art",
+    image: Chaeyoung,
+  },
+  {
+    id: 2,
+    title: "Tzuyu",
+    category: "Art",
+    image: Tzuyu,
+  },
+  {
+    id: 3,
+    title: "Tzuyu Concept",
+    category: "Art",
+    image: Tzuyu2,
+  },
+  {
+    id: 4,
+    title: "Tzuyu Artwork",
+    category: "Art",
+    image: TzuyuArt,
+  },
+  {
+    id: 5,
+    title: "Hwang Yeji",
+    category: "Art",
+    image: HwangYeji,
+  },
+  {
+    id: 6,
+    title: "Fruit Juice",
+    category: "Design",
+    image: FruitJuice,
+  },
+  {
+    id: 7,
+    title: "Fruit Juice Behind The Scene",
+    category: "Design",
+    image: FruitJuiceHind,
+  },
+  {
+    id: 8,
+    title: "TMC #1",
+    category: "Design",
+    image: TMC1,
+  },
+  {
+    id: 9,
+    title: "TMC #2",
+    category: "Design",
+    image: TMC2,
+  },
+  {
+    id: 10,
+    title: "TMC #3",
+    category: "Design",
+    image: TMC3,
+  },
+  {
+    id: 11,
+    title: "TMC #4",
+    category: "Design",
+    image: TMC4,
+  },
+  {
+    id: 12,
+    title: "TMC #5",
+    category: "Design",
+    image: TMC5,
+  },
+  {
+    id: 13,
+    title: "TMC #6",
+    category: "Design",
+    image: TMC6,
+  },
+  {
+    id: 14,
+    title: "TMC #7",
+    category: "Design",
+    image: TMC7,
+  },
+  {
+    id: 15,
+    title: "TMC #8",
+    category: "Design",
+    image: TMC8,
+  },
+  {
+    id: 16,
+    title: "TMC #9",
+    category: "Design",
+    image: TMC9,
+  },
+  {
+    id: 17,
+    title: "Tzuyu Wallpaper",
+    category: "Design",
+    image: TzuyuWallper,
+  },
+
+
+  {
+    id: 18,
+    title: "Golan Customer",
+    category: "Illustration",
+    image: golancustomer,
+  },
+  {
+    id: 19,
+    title: "Mushola",
+    category: "Illustration",
+    image: mushola,
+  },
 ];
 ---
 
-<div class="gallery-container">
-  <div class="gallery-grid">
-    {galleryItems.map(item => (
-      <figure class="gallery-item">
-        <img
-          src={item.image.src}
-          alt={item.title}
-          loading="lazy"
-          class="designwork-image"
-          onload="this.classList.add('loaded')"
-        />
-        <figcaption class="overlay">
-          <h3>{item.title}</h3>
-          <span class="category-tag">{item.category}</span>
-        </figcaption>
-      </figure>
-    ))}
+<section class="gallery-section">
+  <div class="gallery-container">
+    <div class="gallery-grid">
+      {
+        galleryItems.map((item) => (
+          <figure class="gallery-item">
+            <div class="image-wrapper">
+              <img
+                src={item.image.src}
+                width={item.image.width}
+                height={item.image.height}
+                alt={item.title}
+                loading="lazy"
+                decoding="async"
+                class="designwork-image"
+              />
+
+              <figcaption class="overlay">
+                <div class="overlay-content">
+                  <h3>{item.title}</h3>
+                  <span class="category-tag">{item.category}</span>
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+        ))
+      }
+    </div>
   </div>
-</div>
+</section>
+
+<script>
+  const initGalleryImages = () => {
+    const images = document.querySelectorAll<HTMLImageElement>(
+      ".designwork-image"
+    );
+
+    images.forEach((image) => {
+      const markAsLoaded = () => {
+        image.classList.add("loaded");
+      };
+
+      if (image.complete && image.naturalWidth > 0) {
+        markAsLoaded();
+      } else {
+        image.addEventListener("load", markAsLoaded, { once: true });
+      }
+    });
+  };
+
+  initGalleryImages();
+
+  document.addEventListener("astro:page-load", initGalleryImages);
+</script>
 
 <style>
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  /* =========================
+     GLOBAL OVERFLOW PROTECTION
+  ========================= */
 
-/* =========================
-   IMAGE BLUR LOAD (FIXED)
-========================= */
-.designwork-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-
-  /* DEFAULT = BLUR */
-  filter: blur(18px);
-  transform: scale(1.08);
-
-  transition:
-    filter .6s ease,
-    transform .6s ease;
-}
-
-/* AFTER LOAD */
-.designwork-image.loaded {
-  filter: blur(0);
-  transform: scale(1);
-}
-
-/* =========================
-   CONTAINER
-========================= */
-.gallery-container {
-  padding: 3rem 2rem;
-  min-height: 100vh;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-}
-
-/* =========================
-   MASONRY GRID
-========================= */
-.gallery-grid {
-  column-count: 4;
-  column-gap: 1.25rem;
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
-/* =========================
-   ITEM
-========================= */
-.gallery-item {
-  position: relative;
-  margin-bottom: 1.25rem;
-  break-inside: avoid;
-  border-radius: 14px;
-  overflow: hidden;
-  background: #111;
-  box-shadow: 0 8px 24px rgba(0,0,0,.12);
-  transition: transform .25s ease, box-shadow .25s ease;
-  contain: layout paint;
-}
-
-/* HOVER */
-.gallery-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 36px rgba(0,0,0,.18);
-}
-
-/* =========================
-   OVERLAY
-========================= */
-.overlay {
-  position: absolute;
-  inset: 0;
-  padding: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,.75),
-    rgba(0,0,0,.25),
-    transparent
-  );
-  opacity: 0;
-  transition: opacity .25s ease;
-}
-
-.gallery-item:hover .overlay {
-  opacity: 1;
-}
-
-/* TEXT */
-.overlay h3 {
-  color: #fff;
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin-bottom: .35rem;
-}
-
-.category-tag {
-  font-size: .7rem;
-  padding: .3rem .75rem;
-  border-radius: 999px;
-  color: #fff;
-  background: rgba(255,255,255,.2);
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255,255,255,.25);
-  width: fit-content;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 1200px) {
-  .gallery-grid {
-    column-count: 3;
+  :global(html) {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
   }
-}
 
-@media (max-width: 768px) {
+  :global(body) {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: clip;
+  }
+
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+  /* =========================
+     SECTION
+  ========================= */
+
+  .gallery-section {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    overflow-x: clip;
+  }
+
+  /* =========================
+     CONTAINER
+  ========================= */
+
   .gallery-container {
-    padding: 2rem 1rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    margin: 0 auto;
+    padding: 3rem 2rem;
+
+    overflow-x: clip;
   }
 
-  .gallery-grid {
-    column-count: 2;
-    column-gap: 1rem;
-  }
-}
+  /* =========================
+     MASONRY GRID
+  ========================= */
 
-@media (max-width: 480px) {
   .gallery-grid {
-    column-count: 1;
+    width: 100%;
+    max-width: 1500px;
+    min-width: 0;
+
+    margin: 0 auto;
+
+    column-count: 4;
+    column-gap: 1.25rem;
+
+    overflow: clip;
   }
-}
+
+  /* =========================
+     GALLERY ITEM
+  ========================= */
+
+  .gallery-item {
+    display: inline-block;
+
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    margin: 0 0 1.25rem;
+    padding: 0;
+
+    vertical-align: top;
+
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* =========================
+     IMAGE WRAPPER
+  ========================= */
+
+  .image-wrapper {
+    position: relative;
+
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+    background: #111;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+    isolation: isolate;
+
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .gallery-item:hover .image-wrapper {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+  }
+
+  /* =========================
+     IMAGE LOADING EFFECT
+  ========================= */
+
+  .designwork-image {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    object-fit: cover;
+
+    filter: blur(18px);
+    transform: scale(1.05);
+
+    opacity: 0.7;
+
+    will-change: filter, transform, opacity;
+
+    transition:
+      filter 0.7s ease,
+      transform 0.7s ease,
+      opacity 0.7s ease;
+  }
+
+  .designwork-image.loaded {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  /* =========================
+     IMAGE HOVER
+  ========================= */
+
+  .gallery-item:hover .designwork-image.loaded {
+    transform: scale(1.04);
+  }
+
+  /* =========================
+     OVERLAY
+  ========================= */
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: flex-end;
+
+    width: 100%;
+    max-width: 100%;
+
+    padding: 1.25rem;
+
+    opacity: 0;
+
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.82) 0%,
+      rgba(0, 0, 0, 0.4) 45%,
+      transparent 75%
+    );
+
+    pointer-events: none;
+
+    transition: opacity 0.3s ease;
+  }
+
+  .gallery-item:hover .overlay {
+    opacity: 1;
+  }
+
+  .overlay-content {
+    max-width: 100%;
+
+    transform: translateY(12px);
+
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item:hover .overlay-content {
+    transform: translateY(0);
+  }
+
+  /* =========================
+     TEXT
+  ========================= */
+
+  .overlay h3 {
+    max-width: 100%;
+
+    margin: 0 0 0.5rem;
+
+    overflow-wrap: anywhere;
+
+    color: #fff;
+
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .category-tag {
+    display: inline-flex;
+    align-items: center;
+
+    width: fit-content;
+    max-width: 100%;
+
+    padding: 0.3rem 0.75rem;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    color: #fff;
+
+    font-size: 0.7rem;
+    font-weight: 500;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  /* =========================
+     LARGE TABLET
+  ========================= */
+
+  @media (max-width: 1200px) {
+    .gallery-grid {
+      column-count: 3;
+    }
+  }
+
+  /* =========================
+     TABLET / MOBILE
+  ========================= */
+
+  @media (max-width: 768px) {
+    .gallery-container {
+      padding: 2rem 1rem;
+    }
+
+    .gallery-grid {
+      width: 100%;
+      max-width: 100%;
+
+      column-count: 2;
+      column-gap: 1rem;
+    }
+
+    .gallery-item {
+      width: 100%;
+      max-width: 100%;
+
+      margin-bottom: 1rem;
+    }
+
+    .overlay {
+      padding: 1rem;
+      opacity: 1;
+
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.75),
+        transparent 70%
+      );
+    }
+
+    .overlay-content {
+      transform: translateY(0);
+    }
+
+    .overlay h3 {
+      font-size: 0.9rem;
+    }
+
+    .category-tag {
+      font-size: 0.65rem;
+    }
+  }
+
+  /* =========================
+     SMALL MOBILE
+  ========================= */
+
+  @media (max-width: 480px) {
+    .gallery-container {
+      padding: 1.5rem 0.75rem;
+    }
+
+    .gallery-grid {
+      column-count: 1;
+      column-gap: 0;
+    }
+
+    .gallery-item {
+      margin-bottom: 0.875rem;
+    }
+
+    .image-wrapper {
+      border-radius: 12px;
+    }
+  }
+
+  /* =========================
+     REDUCED MOTION
+  ========================= */
+
+  @media (prefers-reduced-motion: reduce) {
+    .designwork-image,
+    .image-wrapper,
+    .overlay,
+    .overlay-content {
+      transition: none;
+    }
+
+    .designwork-image {
+      filter: none;
+      transform: none;
+      opacity: 1;
+    }
+  }
 </style>
